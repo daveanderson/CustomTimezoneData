@@ -1,0 +1,710 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F7078741A24EDA10097EAF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7078731A24EDA10097EAF1 /* main.m */; };
+		4F7078771A24EDA10097EAF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7078761A24EDA10097EAF1 /* AppDelegate.m */; };
+		4F70787A1A24EDA10097EAF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7078791A24EDA10097EAF1 /* ViewController.m */; };
+		4F70787D1A24EDA10097EAF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F70787B1A24EDA10097EAF1 /* Main.storyboard */; };
+		4F70787F1A24EDA10097EAF1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F70787E1A24EDA10097EAF1 /* Images.xcassets */; };
+		4F7078821A24EDA10097EAF1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F7078801A24EDA10097EAF1 /* LaunchScreen.xib */; };
+		4F70788E1A24EDA10097EAF1 /* CustomTimezoneDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F70788D1A24EDA10097EAF1 /* CustomTimezoneDataTests.m */; };
+		4F70794E1A24F1E00097EAF1 /* tzdata.zip in Resources */ = {isa = PBXBuildFile; fileRef = 4F70794D1A24F1E00097EAF1 /* tzdata.zip */; };
+		4F7079511A24F37F0097EAF1 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7079501A24F37F0097EAF1 /* Model.m */; };
+		4F7079611A2543D60097EAF1 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 4F7079571A2543D60097EAF1 /* ioapi.c */; };
+		4F7079621A2543D60097EAF1 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 4F7079591A2543D60097EAF1 /* mztools.c */; };
+		4F7079631A2543D60097EAF1 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 4F70795B1A2543D60097EAF1 /* unzip.c */; };
+		4F7079641A2543D60097EAF1 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 4F70795D1A2543D60097EAF1 /* zip.c */; };
+		4F7079651A2543D60097EAF1 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7079601A2543D60097EAF1 /* SSZipArchive.m */; };
+		4F7079671A2543F70097EAF1 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F7079661A2543F70097EAF1 /* libz.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F7078881A24EDA10097EAF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F7078661A24EDA10097EAF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F70786D1A24EDA10097EAF1;
+			remoteInfo = CustomTimezoneData;
+		};
+		4F7079521A25428F0097EAF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F7078661A24EDA10097EAF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F70789A1A24EE610097EAF1;
+			remoteInfo = tz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4F70786E1A24EDA10097EAF1 /* CustomTimezoneData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTimezoneData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F7078721A24EDA10097EAF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F7078731A24EDA10097EAF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4F7078751A24EDA10097EAF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4F7078761A24EDA10097EAF1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4F7078781A24EDA10097EAF1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4F7078791A24EDA10097EAF1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4F70787C1A24EDA10097EAF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4F70787E1A24EDA10097EAF1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4F7078811A24EDA10097EAF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4F7078871A24EDA10097EAF1 /* CustomTimezoneDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomTimezoneDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F70788C1A24EDA10097EAF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F70788D1A24EDA10097EAF1 /* CustomTimezoneDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTimezoneDataTests.m; sourceTree = "<group>"; };
+		4F70789B1A24EE610097EAF1 /* tz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F7079111A24F1B20097EAF1 /* africa */ = {isa = PBXFileReference; lastKnownFileType = text; path = africa; sourceTree = "<group>"; };
+		4F7079121A24F1B20097EAF1 /* antarctica */ = {isa = PBXFileReference; lastKnownFileType = text; path = antarctica; sourceTree = "<group>"; };
+		4F7079131A24F1B20097EAF1 /* asctime.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = asctime.c; sourceTree = "<group>"; };
+		4F7079141A24F1B20097EAF1 /* asia */ = {isa = PBXFileReference; lastKnownFileType = text; path = asia; sourceTree = "<group>"; };
+		4F7079151A24F1B20097EAF1 /* australasia */ = {isa = PBXFileReference; lastKnownFileType = text; path = australasia; sourceTree = "<group>"; };
+		4F7079161A24F1B20097EAF1 /* backward */ = {isa = PBXFileReference; lastKnownFileType = text; path = backward; sourceTree = "<group>"; };
+		4F7079171A24F1B20097EAF1 /* backzone */ = {isa = PBXFileReference; lastKnownFileType = text; path = backzone; sourceTree = "<group>"; };
+		4F7079181A24F1B20097EAF1 /* checktab.awk */ = {isa = PBXFileReference; lastKnownFileType = text; path = checktab.awk; sourceTree = "<group>"; };
+		4F7079191A24F1B20097EAF1 /* CONTRIBUTING */ = {isa = PBXFileReference; lastKnownFileType = text; path = CONTRIBUTING; sourceTree = "<group>"; };
+		4F70791A1A24F1B20097EAF1 /* date.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = date.1; sourceTree = "<group>"; };
+		4F70791B1A24F1B20097EAF1 /* date.1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = date.1.txt; sourceTree = "<group>"; };
+		4F70791C1A24F1B20097EAF1 /* date.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = date.c; sourceTree = "<group>"; };
+		4F70791D1A24F1B20097EAF1 /* difftime.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = difftime.c; sourceTree = "<group>"; };
+		4F70791E1A24F1B20097EAF1 /* etcetera */ = {isa = PBXFileReference; lastKnownFileType = text; path = etcetera; sourceTree = "<group>"; };
+		4F70791F1A24F1B20097EAF1 /* europe */ = {isa = PBXFileReference; lastKnownFileType = text; path = europe; sourceTree = "<group>"; };
+		4F7079201A24F1B20097EAF1 /* factory */ = {isa = PBXFileReference; lastKnownFileType = text; path = factory; sourceTree = "<group>"; };
+		4F7079211A24F1B20097EAF1 /* ialloc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ialloc.c; sourceTree = "<group>"; };
+		4F7079221A24F1B20097EAF1 /* iso3166.tab */ = {isa = PBXFileReference; lastKnownFileType = text; path = iso3166.tab; sourceTree = "<group>"; };
+		4F7079231A24F1B20097EAF1 /* leap-seconds.list */ = {isa = PBXFileReference; lastKnownFileType = text; path = "leap-seconds.list"; sourceTree = "<group>"; };
+		4F7079241A24F1B20097EAF1 /* leapseconds */ = {isa = PBXFileReference; lastKnownFileType = text; path = leapseconds; sourceTree = "<group>"; };
+		4F7079251A24F1B20097EAF1 /* leapseconds.awk */ = {isa = PBXFileReference; lastKnownFileType = text; path = leapseconds.awk; sourceTree = "<group>"; };
+		4F7079261A24F1B20097EAF1 /* localtime.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = localtime.c; sourceTree = "<group>"; };
+		4F7079271A24F1B20097EAF1 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		4F7079281A24F1B20097EAF1 /* newctime.3 */ = {isa = PBXFileReference; lastKnownFileType = text; path = newctime.3; sourceTree = "<group>"; };
+		4F7079291A24F1B20097EAF1 /* newctime.3.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = newctime.3.txt; sourceTree = "<group>"; };
+		4F70792A1A24F1B20097EAF1 /* NEWS */ = {isa = PBXFileReference; lastKnownFileType = text; path = NEWS; sourceTree = "<group>"; };
+		4F70792B1A24F1B20097EAF1 /* newstrftime.3 */ = {isa = PBXFileReference; lastKnownFileType = text; path = newstrftime.3; sourceTree = "<group>"; };
+		4F70792C1A24F1B20097EAF1 /* newstrftime.3.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = newstrftime.3.txt; sourceTree = "<group>"; };
+		4F70792D1A24F1B20097EAF1 /* newtzset.3 */ = {isa = PBXFileReference; lastKnownFileType = text; path = newtzset.3; sourceTree = "<group>"; };
+		4F70792E1A24F1B20097EAF1 /* newtzset.3.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = newtzset.3.txt; sourceTree = "<group>"; };
+		4F70792F1A24F1B20097EAF1 /* northamerica */ = {isa = PBXFileReference; lastKnownFileType = text; path = northamerica; sourceTree = "<group>"; };
+		4F7079301A24F1B20097EAF1 /* pacificnew */ = {isa = PBXFileReference; lastKnownFileType = text; path = pacificnew; sourceTree = "<group>"; };
+		4F7079311A24F1B20097EAF1 /* private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = private.h; sourceTree = "<group>"; };
+		4F7079321A24F1B20097EAF1 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		4F7079331A24F1B20097EAF1 /* scheck.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = scheck.c; sourceTree = "<group>"; };
+		4F7079341A24F1B20097EAF1 /* southamerica */ = {isa = PBXFileReference; lastKnownFileType = text; path = southamerica; sourceTree = "<group>"; };
+		4F7079351A24F1B20097EAF1 /* strftime.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = strftime.c; sourceTree = "<group>"; };
+		4F7079361A24F1B20097EAF1 /* systemv */ = {isa = PBXFileReference; lastKnownFileType = text; path = systemv; sourceTree = "<group>"; };
+		4F7079371A24F1B20097EAF1 /* Theory */ = {isa = PBXFileReference; lastKnownFileType = text; path = Theory; sourceTree = "<group>"; };
+		4F7079381A24F1B20097EAF1 /* time2posix.3 */ = {isa = PBXFileReference; lastKnownFileType = text; path = time2posix.3; sourceTree = "<group>"; };
+		4F7079391A24F1B20097EAF1 /* time2posix.3.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = time2posix.3.txt; sourceTree = "<group>"; };
+		4F70793A1A24F1B20097EAF1 /* tz-art.htm */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "tz-art.htm"; sourceTree = "<group>"; };
+		4F70793B1A24F1B20097EAF1 /* tz-link.htm */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "tz-link.htm"; sourceTree = "<group>"; };
+		4F70793C1A24F1B20097EAF1 /* tzfile.5 */ = {isa = PBXFileReference; lastKnownFileType = text; path = tzfile.5; sourceTree = "<group>"; };
+		4F70793D1A24F1B20097EAF1 /* tzfile.5.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = tzfile.5.txt; sourceTree = "<group>"; };
+		4F70793E1A24F1B20097EAF1 /* tzfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tzfile.h; sourceTree = "<group>"; };
+		4F70793F1A24F1B20097EAF1 /* tzselect.8 */ = {isa = PBXFileReference; lastKnownFileType = text; path = tzselect.8; sourceTree = "<group>"; };
+		4F7079401A24F1B20097EAF1 /* tzselect.8.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = tzselect.8.txt; sourceTree = "<group>"; };
+		4F7079411A24F1B20097EAF1 /* tzselect.ksh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = tzselect.ksh; sourceTree = "<group>"; };
+		4F7079421A24F1B20097EAF1 /* workman.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = workman.sh; sourceTree = "<group>"; };
+		4F7079431A24F1B20097EAF1 /* yearistype.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = yearistype.sh; sourceTree = "<group>"; };
+		4F7079441A24F1B20097EAF1 /* zdump.8 */ = {isa = PBXFileReference; lastKnownFileType = text; path = zdump.8; sourceTree = "<group>"; };
+		4F7079451A24F1B20097EAF1 /* zdump.8.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = zdump.8.txt; sourceTree = "<group>"; };
+		4F7079461A24F1B20097EAF1 /* zdump.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zdump.c; sourceTree = "<group>"; };
+		4F7079471A24F1B20097EAF1 /* zic.8 */ = {isa = PBXFileReference; lastKnownFileType = text; path = zic.8; sourceTree = "<group>"; };
+		4F7079481A24F1B20097EAF1 /* zic.8.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = zic.8.txt; sourceTree = "<group>"; };
+		4F7079491A24F1B20097EAF1 /* zic.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zic.c; sourceTree = "<group>"; };
+		4F70794A1A24F1B20097EAF1 /* zone.tab */ = {isa = PBXFileReference; lastKnownFileType = text; path = zone.tab; sourceTree = "<group>"; };
+		4F70794B1A24F1B20097EAF1 /* zone1970.tab */ = {isa = PBXFileReference; lastKnownFileType = text; path = zone1970.tab; sourceTree = "<group>"; };
+		4F70794C1A24F1B20097EAF1 /* zoneinfo2tdf.pl */ = {isa = PBXFileReference; lastKnownFileType = text.script.perl; path = zoneinfo2tdf.pl; sourceTree = "<group>"; };
+		4F70794D1A24F1E00097EAF1 /* tzdata.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = tzdata.zip; path = build/tz/tzdata.zip; sourceTree = SOURCE_ROOT; };
+		4F70794F1A24F37F0097EAF1 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		4F7079501A24F37F0097EAF1 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		4F7079561A2543D60097EAF1 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		4F7079571A2543D60097EAF1 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		4F7079581A2543D60097EAF1 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		4F7079591A2543D60097EAF1 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		4F70795A1A2543D60097EAF1 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		4F70795B1A2543D60097EAF1 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		4F70795C1A2543D60097EAF1 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		4F70795D1A2543D60097EAF1 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		4F70795E1A2543D60097EAF1 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		4F70795F1A2543D60097EAF1 /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSZipArchive.h; path = "ssziparchive-0.2.1/SSZipArchive.h"; sourceTree = SOURCE_ROOT; };
+		4F7079601A2543D60097EAF1 /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSZipArchive.m; path = "ssziparchive-0.2.1/SSZipArchive.m"; sourceTree = SOURCE_ROOT; };
+		4F7079661A2543F70097EAF1 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F70786B1A24EDA10097EAF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F7079671A2543F70097EAF1 /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F7078841A24EDA10097EAF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F7078651A24EDA10097EAF1 = {
+			isa = PBXGroup;
+			children = (
+				4F7079661A2543F70097EAF1 /* libz.dylib */,
+				4F7078701A24EDA10097EAF1 /* CustomTimezoneData */,
+				4F70788A1A24EDA10097EAF1 /* CustomTimezoneDataTests */,
+				4F70789C1A24EE610097EAF1 /* tz */,
+				4F70786F1A24EDA10097EAF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4F70786F1A24EDA10097EAF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F70786E1A24EDA10097EAF1 /* CustomTimezoneData.app */,
+				4F7078871A24EDA10097EAF1 /* CustomTimezoneDataTests.xctest */,
+				4F70789B1A24EE610097EAF1 /* tz.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F7078701A24EDA10097EAF1 /* CustomTimezoneData */ = {
+			isa = PBXGroup;
+			children = (
+				4F7078751A24EDA10097EAF1 /* AppDelegate.h */,
+				4F7078761A24EDA10097EAF1 /* AppDelegate.m */,
+				4F7079541A2543C90097EAF1 /* SSZipArchive */,
+				4F70794F1A24F37F0097EAF1 /* Model.h */,
+				4F7079501A24F37F0097EAF1 /* Model.m */,
+				4F7078781A24EDA10097EAF1 /* ViewController.h */,
+				4F7078791A24EDA10097EAF1 /* ViewController.m */,
+				4F70787B1A24EDA10097EAF1 /* Main.storyboard */,
+				4F70787E1A24EDA10097EAF1 /* Images.xcassets */,
+				4F7078801A24EDA10097EAF1 /* LaunchScreen.xib */,
+				4F7078711A24EDA10097EAF1 /* Supporting Files */,
+			);
+			path = CustomTimezoneData;
+			sourceTree = "<group>";
+		};
+		4F7078711A24EDA10097EAF1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F7078721A24EDA10097EAF1 /* Info.plist */,
+				4F7078731A24EDA10097EAF1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4F70788A1A24EDA10097EAF1 /* CustomTimezoneDataTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F70788D1A24EDA10097EAF1 /* CustomTimezoneDataTests.m */,
+				4F70788B1A24EDA10097EAF1 /* Supporting Files */,
+			);
+			path = CustomTimezoneDataTests;
+			sourceTree = "<group>";
+		};
+		4F70788B1A24EDA10097EAF1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F70788C1A24EDA10097EAF1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4F70789C1A24EE610097EAF1 /* tz */ = {
+			isa = PBXGroup;
+			children = (
+				4F70794D1A24F1E00097EAF1 /* tzdata.zip */,
+				4F7078F51A24F06C0097EAF1 /* src */,
+			);
+			path = tz;
+			sourceTree = "<group>";
+		};
+		4F7078F51A24F06C0097EAF1 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				4F7079111A24F1B20097EAF1 /* africa */,
+				4F7079121A24F1B20097EAF1 /* antarctica */,
+				4F7079131A24F1B20097EAF1 /* asctime.c */,
+				4F7079141A24F1B20097EAF1 /* asia */,
+				4F7079151A24F1B20097EAF1 /* australasia */,
+				4F7079161A24F1B20097EAF1 /* backward */,
+				4F7079171A24F1B20097EAF1 /* backzone */,
+				4F7079181A24F1B20097EAF1 /* checktab.awk */,
+				4F7079191A24F1B20097EAF1 /* CONTRIBUTING */,
+				4F70791A1A24F1B20097EAF1 /* date.1 */,
+				4F70791B1A24F1B20097EAF1 /* date.1.txt */,
+				4F70791C1A24F1B20097EAF1 /* date.c */,
+				4F70791D1A24F1B20097EAF1 /* difftime.c */,
+				4F70791E1A24F1B20097EAF1 /* etcetera */,
+				4F70791F1A24F1B20097EAF1 /* europe */,
+				4F7079201A24F1B20097EAF1 /* factory */,
+				4F7079211A24F1B20097EAF1 /* ialloc.c */,
+				4F7079221A24F1B20097EAF1 /* iso3166.tab */,
+				4F7079231A24F1B20097EAF1 /* leap-seconds.list */,
+				4F7079241A24F1B20097EAF1 /* leapseconds */,
+				4F7079251A24F1B20097EAF1 /* leapseconds.awk */,
+				4F7079261A24F1B20097EAF1 /* localtime.c */,
+				4F7079271A24F1B20097EAF1 /* Makefile */,
+				4F7079281A24F1B20097EAF1 /* newctime.3 */,
+				4F7079291A24F1B20097EAF1 /* newctime.3.txt */,
+				4F70792A1A24F1B20097EAF1 /* NEWS */,
+				4F70792B1A24F1B20097EAF1 /* newstrftime.3 */,
+				4F70792C1A24F1B20097EAF1 /* newstrftime.3.txt */,
+				4F70792D1A24F1B20097EAF1 /* newtzset.3 */,
+				4F70792E1A24F1B20097EAF1 /* newtzset.3.txt */,
+				4F70792F1A24F1B20097EAF1 /* northamerica */,
+				4F7079301A24F1B20097EAF1 /* pacificnew */,
+				4F7079311A24F1B20097EAF1 /* private.h */,
+				4F7079321A24F1B20097EAF1 /* README */,
+				4F7079331A24F1B20097EAF1 /* scheck.c */,
+				4F7079341A24F1B20097EAF1 /* southamerica */,
+				4F7079351A24F1B20097EAF1 /* strftime.c */,
+				4F7079361A24F1B20097EAF1 /* systemv */,
+				4F7079371A24F1B20097EAF1 /* Theory */,
+				4F7079381A24F1B20097EAF1 /* time2posix.3 */,
+				4F7079391A24F1B20097EAF1 /* time2posix.3.txt */,
+				4F70793A1A24F1B20097EAF1 /* tz-art.htm */,
+				4F70793B1A24F1B20097EAF1 /* tz-link.htm */,
+				4F70793C1A24F1B20097EAF1 /* tzfile.5 */,
+				4F70793D1A24F1B20097EAF1 /* tzfile.5.txt */,
+				4F70793E1A24F1B20097EAF1 /* tzfile.h */,
+				4F70793F1A24F1B20097EAF1 /* tzselect.8 */,
+				4F7079401A24F1B20097EAF1 /* tzselect.8.txt */,
+				4F7079411A24F1B20097EAF1 /* tzselect.ksh */,
+				4F7079421A24F1B20097EAF1 /* workman.sh */,
+				4F7079431A24F1B20097EAF1 /* yearistype.sh */,
+				4F7079441A24F1B20097EAF1 /* zdump.8 */,
+				4F7079451A24F1B20097EAF1 /* zdump.8.txt */,
+				4F7079461A24F1B20097EAF1 /* zdump.c */,
+				4F7079471A24F1B20097EAF1 /* zic.8 */,
+				4F7079481A24F1B20097EAF1 /* zic.8.txt */,
+				4F7079491A24F1B20097EAF1 /* zic.c */,
+				4F70794A1A24F1B20097EAF1 /* zone.tab */,
+				4F70794B1A24F1B20097EAF1 /* zone1970.tab */,
+				4F70794C1A24F1B20097EAF1 /* zoneinfo2tdf.pl */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		4F7079541A2543C90097EAF1 /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				4F7079551A2543D60097EAF1 /* minizip */,
+				4F70795F1A2543D60097EAF1 /* SSZipArchive.h */,
+				4F7079601A2543D60097EAF1 /* SSZipArchive.m */,
+			);
+			name = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		4F7079551A2543D60097EAF1 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				4F7079561A2543D60097EAF1 /* crypt.h */,
+				4F7079571A2543D60097EAF1 /* ioapi.c */,
+				4F7079581A2543D60097EAF1 /* ioapi.h */,
+				4F7079591A2543D60097EAF1 /* mztools.c */,
+				4F70795A1A2543D60097EAF1 /* mztools.h */,
+				4F70795B1A2543D60097EAF1 /* unzip.c */,
+				4F70795C1A2543D60097EAF1 /* unzip.h */,
+				4F70795D1A2543D60097EAF1 /* zip.c */,
+				4F70795E1A2543D60097EAF1 /* zip.h */,
+			);
+			name = minizip;
+			path = "ssziparchive-0.2.1/minizip";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F70786D1A24EDA10097EAF1 /* CustomTimezoneData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F7078911A24EDA10097EAF1 /* Build configuration list for PBXNativeTarget "CustomTimezoneData" */;
+			buildPhases = (
+				4F70786A1A24EDA10097EAF1 /* Sources */,
+				4F70786B1A24EDA10097EAF1 /* Frameworks */,
+				4F70786C1A24EDA10097EAF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F7079531A25428F0097EAF1 /* PBXTargetDependency */,
+			);
+			name = CustomTimezoneData;
+			productName = CustomTimezoneData;
+			productReference = 4F70786E1A24EDA10097EAF1 /* CustomTimezoneData.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4F7078861A24EDA10097EAF1 /* CustomTimezoneDataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F7078941A24EDA10097EAF1 /* Build configuration list for PBXNativeTarget "CustomTimezoneDataTests" */;
+			buildPhases = (
+				4F7078831A24EDA10097EAF1 /* Sources */,
+				4F7078841A24EDA10097EAF1 /* Frameworks */,
+				4F7078851A24EDA10097EAF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F7078891A24EDA10097EAF1 /* PBXTargetDependency */,
+			);
+			name = CustomTimezoneDataTests;
+			productName = CustomTimezoneDataTests;
+			productReference = 4F7078871A24EDA10097EAF1 /* CustomTimezoneDataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4F70789A1A24EE610097EAF1 /* tz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F7078BB1A24EE610097EAF1 /* Build configuration list for PBXNativeTarget "tz" */;
+			buildPhases = (
+				4F7078C11A24EE8D0097EAF1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tz;
+			productName = tz;
+			productReference = 4F70789B1A24EE610097EAF1 /* tz.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F7078661A24EDA10097EAF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Robots and Pencils Inc.";
+				TargetAttributes = {
+					4F70786D1A24EDA10097EAF1 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					4F7078861A24EDA10097EAF1 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 4F70786D1A24EDA10097EAF1;
+					};
+					4F70789A1A24EE610097EAF1 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 4F7078691A24EDA10097EAF1 /* Build configuration list for PBXProject "CustomTimezoneData" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F7078651A24EDA10097EAF1;
+			productRefGroup = 4F70786F1A24EDA10097EAF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F70786D1A24EDA10097EAF1 /* CustomTimezoneData */,
+				4F7078861A24EDA10097EAF1 /* CustomTimezoneDataTests */,
+				4F70789A1A24EE610097EAF1 /* tz */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F70786C1A24EDA10097EAF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F70787D1A24EDA10097EAF1 /* Main.storyboard in Resources */,
+				4F7078821A24EDA10097EAF1 /* LaunchScreen.xib in Resources */,
+				4F70787F1A24EDA10097EAF1 /* Images.xcassets in Resources */,
+				4F70794E1A24F1E00097EAF1 /* tzdata.zip in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F7078851A24EDA10097EAF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F7078C11A24EE8D0097EAF1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd tz\n\nTZDIR=$( pwd )\n\necho $TZDIR\n\nexport TOPDIR=$TZDIR/../build/tz\nmake TOPDIR=$TOPDIR install\n\ncd $TOPDIR/etc/zoneinfo\necho \"--\"\necho $TOPDIR/tzdata.zip\nzip -r $TOPDIR/tzdata.zip *\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F70786A1A24EDA10097EAF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F70787A1A24EDA10097EAF1 /* ViewController.m in Sources */,
+				4F7079641A2543D60097EAF1 /* zip.c in Sources */,
+				4F7079651A2543D60097EAF1 /* SSZipArchive.m in Sources */,
+				4F7079631A2543D60097EAF1 /* unzip.c in Sources */,
+				4F7078771A24EDA10097EAF1 /* AppDelegate.m in Sources */,
+				4F7079621A2543D60097EAF1 /* mztools.c in Sources */,
+				4F7078741A24EDA10097EAF1 /* main.m in Sources */,
+				4F7079511A24F37F0097EAF1 /* Model.m in Sources */,
+				4F7079611A2543D60097EAF1 /* ioapi.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F7078831A24EDA10097EAF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F70788E1A24EDA10097EAF1 /* CustomTimezoneDataTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F7078891A24EDA10097EAF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F70786D1A24EDA10097EAF1 /* CustomTimezoneData */;
+			targetProxy = 4F7078881A24EDA10097EAF1 /* PBXContainerItemProxy */;
+		};
+		4F7079531A25428F0097EAF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F70789A1A24EE610097EAF1 /* tz */;
+			targetProxy = 4F7079521A25428F0097EAF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4F70787B1A24EDA10097EAF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F70787C1A24EDA10097EAF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4F7078801A24EDA10097EAF1 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F7078811A24EDA10097EAF1 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4F70788F1A24EDA10097EAF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4F7078901A24EDA10097EAF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F7078921A24EDA10097EAF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CustomTimezoneData/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4F7078931A24EDA10097EAF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CustomTimezoneData/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4F7078951A24EDA10097EAF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CustomTimezoneDataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomTimezoneData.app/CustomTimezoneData";
+			};
+			name = Debug;
+		};
+		4F7078961A24EDA10097EAF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CustomTimezoneDataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomTimezoneData.app/CustomTimezoneData";
+			};
+			name = Release;
+		};
+		4F7078BC1A24EE610097EAF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4F7078BD1A24EE610097EAF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F7078691A24EDA10097EAF1 /* Build configuration list for PBXProject "CustomTimezoneData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F70788F1A24EDA10097EAF1 /* Debug */,
+				4F7078901A24EDA10097EAF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F7078911A24EDA10097EAF1 /* Build configuration list for PBXNativeTarget "CustomTimezoneData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F7078921A24EDA10097EAF1 /* Debug */,
+				4F7078931A24EDA10097EAF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4F7078941A24EDA10097EAF1 /* Build configuration list for PBXNativeTarget "CustomTimezoneDataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F7078951A24EDA10097EAF1 /* Debug */,
+				4F7078961A24EDA10097EAF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4F7078BB1A24EE610097EAF1 /* Build configuration list for PBXNativeTarget "tz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F7078BC1A24EE610097EAF1 /* Debug */,
+				4F7078BD1A24EE610097EAF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F7078661A24EDA10097EAF1 /* Project object */;
+}
