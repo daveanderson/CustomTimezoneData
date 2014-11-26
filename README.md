@@ -9,3 +9,5 @@ As evidenced by the failure of the unit test `testAfterSwitchToStandardTimeAttem
 That is, `NSTimeZone timeZoneWithName:data:` does not appear to leverage use the `data:` parameter.
 
 Either `NSTimeZone timeZoneWithName:data:` should properly accept and use the `data:` parameter (providing an error if the data supplied is not usable), or this method (and the related `initWithName:data:` method) should be deprecated.
+
+Releases of the tz database are available from http://www.iana.org/time-zones
